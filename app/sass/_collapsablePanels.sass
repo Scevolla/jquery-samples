@@ -1,0 +1,47 @@
+.s_collapsablePanels
+
+	.displaying_frame
+		height: 550px
+	
+	.collapsablePanels_container
+		width: 383px
+
+	.collapsablePanels_post
+		background: url('../img/message-bar.gif') no-repeat 0 0
+
+	.collapsablePanels_post_title 
+		cursor: pointer
+		overflow: hidden
+		font-size: 1em
+		line-height: 1.8em
+		span
+			display: inline-block
+			margin: 0 10px			
+		.author
+			float: left
+		.date
+			float: right
+			font-size: 0.8em
+			color: $grey-color
+
+	.collapsablePanels_post_content 	
+	
+	.collapsablePanels_post_text 
+		font-size: 0.9em
+		padding: 10px 10px 15px 10px
+
+	.collapsablePanels_controls
+		float: right
+		padding-top: 10px
+		a
+			display: inline-block
+			margin-left: 20px
+			font-size: 0.8em
+			color: $grey-color
+			cursor: default
+			&.clickable
+				color: #00f		
+				cursor: pointer
+				&:hover
+					text-decoration: underline
+		

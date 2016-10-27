@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Примеры использования jQuery</title>
+	<meta name='description' content='Небольшие примеры использования Query'>		
+	<meta http-equiv="X-UA-Compatible" content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+	<div class="fixed">
+		
+		<a class='linkToTop' href="#top">Наверх</a>
+
+	</div>
+
+	<div id='top' class="container">
+
+		<header class='header'>
+
+			<h1 class='header_title'>Примеры использования jQuery</h1>
+			<p class='header_descr'>Здесь представлены несколько простых примеров, демонстрирующих возможности использования jQuery для улучшения удобства и внешнего вида html-страничек.</p>
+
+			<nav class='header_menu'>
+				<h4 class='header_menu_title'>Содержание</h4>
+				<ol class='header_menu_list'>
+					<li><a class='header_menu_link' href="#slidePanel_id">Простая выплывающая панель</a></li>
+					<li><a class='header_menu_link' href="#disappearing_id">Исчезающие блоки</a></li>
+					<li><a class='header_menu_link' href="#chainableEffects_id">Цепные анимации</a></li>
+					<li><a class='header_menu_link' href="#accordeon_id">Аккордеон</a></li>
+					<li><a class='header_menu_link' href="#animatedHover_id">Всплывающая подсказка</a></li>
+					<li><a class='header_menu_link' href="#clickableBlock_id">Блок-ссылка</a></li>
+					<li><a class='header_menu_link' href="#collapsablePanels_id">Сворачиваемые панели</a></li>
+					<li><a class='header_menu_link' href="#imageGallery_id">Галерея изображений</a></li>
+				</ol>
+			</nav>
+
+		</header>
+
+		<div class="content">
+
+			<section id ='slidePanel_id' class="s_slidePanel">
+				<h3 class="s_header">Простая выплывающая панель</h3>
+				<div class="displaying_frame">
+					<div class="slidePanel_container">
+						<div id='slidePanel' class="slidePanel"></div>
+						<div class="slidePanel_bottomLine"></div>
+						<button id = 'slidePanel_toogle_id' class='slidePanel_toggle'>Slide Panel <span class='icon'></span></button>
+					</div>
+				</div>
+			</section>
+
+			<section id ='disappearing_id' class="s_disappearing">
+				<h3 class="s_header">Исчезающие блоки</h3>
+				<div class="displaying_frame scrollable">
+					<div class="displaying_frame_viewport">
+						<div class="disapearing_container posts_container">
+							<div class="post">
+								<div class="post_content">
+									<h5 class="post_content_title">Sample heading 1</h5>
+									<p class="post_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+									<span class="disappearing_post_btn_delete"></span>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post_content">
+									<h5 class="post_content_title">Sample heading 1</h5>
+									<p class="post_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+									<span class="disappearing_post_btn_delete"></span>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post_content">
+									<h5 class="post_content_title">Sample heading 1</h5>
+									<p class="post_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+									<span class="disappearing_post_btn_delete"></span>
+								</div>
+							</div>
+							<div class="post">
+								<div class="post_content">
+									<h5 class="post_content_title">Sample heading 1</h5>
+									<p class="post_content_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+									<span class="disappearing_post_btn_delete"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id ='chainableEffects_id' class="s_chainableEffects">
+				<h3 class="s_header">Цепные анимации</h3>
+				<div class="displaying_frame">
+					<div class="chainableEffects_container">
+						<a id='chainableEffects_startBtn_id' class="chainableEffects_startBtn" href="">Старт</a>
+						<div id='chainableEffects_effectBox_id' class="chainableEffects_effectBox"></div>
+					</div>
+				</div>
+			</section>
+
+			<section id ='accordeon_id' class="s_accordeon">
+				<h3 class="s_header">Аккордеон</h3>
+				<div class="displaying_frame scrollable">
+					<div class="displaying_frame_viewport">
+						<div class="accordeon_container posts_container">
+							<div class="accordeon_post">
+								<h5 class="accordeon_post_title">Question One Sample Text</h5>
+								<div class="accordeon_post_content">
+									<p class="accordeon_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+								</div>
+							</div>
+							<div class="accordeon_post">
+								<h5 class="accordeon_post_title">Question One Sample Text</h5>
+								<div class="accordeon_post_content">
+									<p class="accordeon_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+								</div>
+							</div>
+							<div class="accordeon_post">
+								<h5 class="accordeon_post_title">Question One Sample Text</h5>
+								<div class="accordeon_post_content">
+									<p class="accordeon_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+								</div>
+							</div>
+							<div class="accordeon_post">
+								<h5 class="accordeon_post_title">Question One Sample Text</h5>
+								<div class="accordeon_post_content">
+									<p class="accordeon_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+								</div>
+							</div>
+							<div class="accordeon_post">
+								<h5 class="accordeon_post_title">Question One Sample Text</h5>
+								<div class="accordeon_post_content">
+									<p class="accordeon_post_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, perspiciatis, vel ea libero numquam quas architecto tempore neque hic pariatur veniam odit optio, officia magnam non. Explicabo itaque, rem deleniti, voluptate nihil esse at porro quaerat corporis ipsam asperiores distinctio.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id ='animatedHover_id' class="s_animatedHover">
+				<h3 class="s_header">Всплывающая подсказка</h3>
+				<div class="displaying_frame">
+					<div class="animatedHover_container">
+						<ul class='animatedHover_list'>
+							<li class='animatedHover_listItem'>
+								<a class='animatedHover_link' href="http://webdesignerwall.com/" title='Go to home' target='_blank'>Home</a>
+								<div class="animatedHover_linkHover"></div>
+							</li>
+							<li class='animatedHover_listItem'>
+								<a class='animatedHover_link' href="http://webdesignerwall.com/about" title='Find out who i am' target='_blank'>About</a>
+								<div class="animatedHover_linkHover"></div>
+							</li>
+							<li class='animatedHover_listItem'>
+								<a class='animatedHover_link' href="http://feeds.feedburner.com/WebDesignerWall" title='Subscribe RSS feeds' target='_blank'>Subscribe RSS</a>
+								<div class="animatedHover_linkHover"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section id ='clickableBlock_id' class="s_clickableBlock">
+				<h3 class="s_header">Блок-ссылка</h3>
+				<div class="displaying_frame scrollable">
+					<div class="displaying_frame_viewport">
+						<div class="clickableBlock_container posts_container">
+							<a href="http://webdesignerwall.com/" target='_blank'>
+								<div class="post">							
+									<div class="post_content">
+										<h5 class="post_content_title">Web Designer Wall</h5>
+										<p class="post_content_text">A wall of design ideas, web trends, and tutorials</p>
+									</div>							
+								</div>
+							</a>
+							<a href="http://webdesignerwall.com/" target='_blank'>
+								<div class="post">
+									<div class="post_content">
+										<h5 class="post_content_title">Best Web Gallery</h5>
+										<p class="post_content_text">Featuring the best CSS and Flash web sites</p>
+									</div>
+								</div>
+							</a>
+							<a href="http://webdesignerwall.com/" target='_blank'>
+								<div class="post">
+									<div class="post_content">
+										<h5 class="post_content_title">N.Design Studio</h5>
+										<p class="post_content_text">Blog and design portfolio of Nick La</p>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id ='collapsablePanels_id' class="s_collapsablePanels">
+				<h3 class="s_header">Сворачиваемые панели</h3>
+				<div class="displaying_frame scrollable">
+					<div class="displaying_frame_viewport">
+						<div class="collapsablePanels_container posts_container">
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone1:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone2:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone3:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone4:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone5:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone6:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone7:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone8:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_post">
+								<h5 class="collapsablePanels_post_title"><span class='author'>someone9:</span><span class='date'>1 minute ago</span></h5>
+								<div class="collapsablePanels_post_content">
+									<p class="collapsablePanels_post_text">Hello Nick,<br><br>This is the latest message display. The rest are collapsed by default</p>
+								</div>
+							</div>
+							<div class="collapsablePanels_controls">
+								<a id='collapseAll_id' class='clickable' href="">Collapse all</a>
+								<a id='showAllMessage_id' href="">Show all message</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id ='imageGallery_id' class="s_imageGallery">
+				<h3 class="s_header">Галерея изображений</h3>
+				<div class="displaying_frame">
+					<div class="imageGallery_container">
+						<h3 class='imageGallery_title'>Иллюстрации <span class='imageNumber'>(Изображение <span id="imageNumber">1</span>)</span></h3>
+						<div class="imageViewContainer"><img id='imageView_id' src="img/img1-lg.jpg" alt="img1"></div>
+						<ul class='thumbsList' id='thumbsList_id'>
+							<li class='active'><img src="img/img1-thumb.jpg" alt="img1"></li>
+							<li><img src="img/img2-thumb.jpg" alt="img2"></li>
+							<li><img src="img/img3-thumb.jpg" alt="img3"></li>
+							<li><img src="img/img4-thumb.jpg" alt="img4"></li>
+							<li><img src="img/img5-thumb.jpg" alt="img5"></li>
+							<li><img src="img/img6-thumb.jpg" alt="img6"></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src='js/common.js'></script>
+</body>
+</html>

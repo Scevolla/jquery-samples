@@ -1,0 +1,39 @@
+.s_animatedHover
+
+	.displaying_frame
+		height: 250px
+
+	.animatedHover_list
+		padding-top: 140px
+		text-align: center
+
+	.animatedHover_listItem
+		position: relative
+		display: inline-block
+		margin-right: 4%
+		margin-bottom: 10px
+		&:last-child
+			margin-right: 0
+
+	.animatedHover_link
+		display: block
+		width: 164px
+		height: 36px
+		background: url('../img/button.gif') no-repeat 0 0
+		line-height: 36px
+		color: #000
+		font-size: 0.8em
+		font-weight: bold
+
+	.animatedHover_linkHover
+		display: none
+		opacity: 0
+		position: absolute
+		top: -100px
+		left: -17px
+		width: 200px
+		height: 76px
+		box-sizing: border-box
+		padding: 15px 10px 10px 10px
+		font-size: 0.8em
+		background: url('../img/hover.png') no-repeat 0 0
